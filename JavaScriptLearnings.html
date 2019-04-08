@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment1</title>
+	</head>
+	<body>
+	<script>
+		
+		var names = ['Max', 'Alex', 'Rach', 'John', 'Vlad','Richard', 'Natalie', 'Craig', 'Mike', 'Brenden'];
+		
+		for (item in names) {
+			//display = names[item];	
+    		// console.log(display);
+			
+			document.write(names[item]);
+			document.write('<br>');
+		}
+
+		document.write('<br>');
+
+		function dosomething (name){
+			/*console.log('Hello');
+			console.log(name);
+			console.log('do something');*/
+
+			return name;
+		}
+
+		for (x in names) {
+			//displaying = names[x];
+			//console.log(dosomething(display));
+			
+			document.write('Hello');
+			document.write('<br>');
+			document.write(dosomething(names[x]));
+			document.write('<br>');
+			document.write('do something');
+			document.write('<br>');
+			document.write('<br>');
+		}
+	
+		</script>
+	
+	</body>
+</html>
