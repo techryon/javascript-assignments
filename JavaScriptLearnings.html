@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Assignment1</title>
+		<title>JavaScript Learnings</title>
 	</head>
 	<body>
 	<script>
 		
 		var names = ['Max', 'Alex', 'Rach', 'John', 'Vlad','Richard', 'Natalie', 'Craig', 'Mike', 'Brenden'];
 		
-		for (index in names) { //mweber: i would change item to index to make it clearer for other developers
-						
+		//This loop will print all the elements from the names array
+		for (index in names) { 
 			document.write(names[index]);
 			document.write('<br>');
 
 			}
 
 		document.write('<br>');
-		
-		/**
-         * TODO: use a better name for your function, what do you want to achieve with it
-         * If you do not find a good name it is probably not a good function
-         *
-         * TODO: Improve the method so that you call it down in the for loop and nothing else.
-         *
-         * This method accepts a name as input (which is most likly Alex, Richard...)
-         * And you return the method with the same name (which is literally the same)
-         *
-         * Also recommended is camelCase for function names :slightly_smiling_face: -> doSomething(name)
-         */
 
-		function assignTaskToNames (name){
+		//This will call each element of the array and assign them a task
+		names.forEach(function assignTaskToNames (name){
 			document.write('Hello');
 			document.write('<br>');
 			document.write(name);
@@ -37,14 +26,10 @@
 			document.write('do something');
 			document.write('<br>');
 			document.write('<br>');
-			//return name;
-			}
-
-		for (eachPerson in names) {
-			assignTaskToNames(names[eachPerson]);	
 			
-		}
-	
+			});
+
+			
 		</script>
 	
 	</body>
